@@ -6,13 +6,25 @@
   
 Os requisitos do exercício são:
 
-º Criar um repositório com um README.md
-º Clonar o repositório localmente
-º Criar uma nova branch
-º Organizar as pastas de acordo com o padrão Trybe
-º Adicionar novas informações ao README.md do repositório
-º Fazer os commits
-º Realizar o push
-º Abrir um Pull Request
-º Realizar o merge
-º Fazer um pull nas alterações 
+- Criar um repositório com um README.md
+
+- Clonar o repositório localmente
+
+- Criar uma nova branch
+
+- Organizar as pastas de acordo com o padrão Trybe
+
+- Adicionar novas informações ao README.md do repositório
+
+- Fazer os commits
+
+- Realizar o push
+
+- Abrir um Pull Request
+
+- Realizar o merge
+
+- Fazer um pull nas alterações 
+
+O resultado saiu como esperado, sendo esse repositório que estão vendo agora, com as branchs!
+
