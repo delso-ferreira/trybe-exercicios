@@ -94,42 +94,44 @@ for (let index = 0; index < numbers.length; index += 1) {
 }
 
 
-// Bubble sort
+// Ordenar crescente
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (index = 1; index < numbers.length; index +=1){
-    for(segundoIndex = 0; segundoIndex < index; segundoIndex +=1) {
-        if (numbers[index] > numbers[segundoIndex]){
-            let position = numbers[segundoIndex];
-                numbers[index] = numbers[segundoIndex]
-                position = numbers[index]
+for (let index = 1; index < numbers.length; index +=1){
+    for(let secondIndex = 0; secondIndex < index; secondIndex +=1) {
+        if (numbers[index] < numbers[secondIndex]){
+            let position = numbers[secondIndex];
+                numbers[index] = numbers[secondIndex];
+                position = numbers[index];
 
 
         }
-    }
-} console.log(numbers)
+    };
+} console.log(numbers);
 
-// Ordernar em ordem crescente e imprimir
+// Novo array com multiplicação
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let novoArray= []
+let newArray= []
 
-for (index  = 1; index < numbers.length ; index += 1){
-    for (segundoIndex = 0; segundoIndex < index; segundoIndex += 1){
-        if ( numbers[index] < numbers[segundoIndex]) {
-            let position = numbers[index];
-            numbers[index] = numbers[segundoIndex];
-           numbers[segundoIndex] = position
+for (let index = 1; index < numbers.length; index +=1){
+    for(let secondIndex = 0; secondIndex < index; secondIndex +=1) {
+        if (numbers[index] < numbers[secondIndex]){
+            let position = numbers[secondIndex];
+                numbers[index] = numbers[secondIndex];
+                position = numbers[index];
         }
     }
 }       
-        for (novoArray = 0; novoArray < numbers.length; novoArray +=1){
-            novoArray.push = (numbers[index] * numbers[index] + 1)
+        for (newArray = 0; newArray < numbers.length; newArray +=1){
+            if (index + 1 < array.length){
+            newArray.push(numbers[index] * numbers[index] + 1);
         }
-            console.log(novoArray) 
-            
+        else {
+             newArray.push(numbers[index * 2]);
 
-
-   
+        }
+    }
+            console.log(newArray);
