@@ -1,4 +1,4 @@
-// Exercício 1
+ // Exercício 1
 
 let fatorial = 0;
 
@@ -20,20 +20,44 @@ for (let index = 5; index >= 0; index -= 1){
 
 // Exercício 3
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+let arrayDePrimos = ['java', 'javascript', 'python', 'html', 'css'];
 
-let maiorPalavra = array[0]; 
-let menorPalavra = array [0];
+let maiorPalavra = arrayDePrimos[0]; 
+let menorPalavra = arrayDePrimos [0];
 
-for (let index = 0; index < array.length; index += 1){
+for (let index = 0; index < arrayDePrimos.length; index += 1){
     
-if (array[index].length > maiorPalavra.length){
-    maiorPalavra = array[index];
+if (arrayDePrimos[index].length > maiorPalavra.length){
+    maiorPalavra = arrayDePrimos[index];
     
 }
-else if (array[index].length < menorPalavra.length){
-    menorPalavra = array[index];
+else if (arrayDePrimos[index].length < menorPalavra.length){
+    menorPalavra = arrayDePrimos[index];
 }
 }
     console.log(menorPalavra);
     console.log(maiorPalavra);
+
+// Exercício 4
+
+
+let maiorPrimo = 0;
+
+
+
+for (let indexI = 2; indexI <= 50; indexI += 1) {
+    let confirmaPrimo = true
+    for (let indexJ = 2; indexJ < indexI; indexJ += 1) {
+        if (indexI % indexJ === 0) {
+            confirmaPrimo = false;
+        }
+    }
+    if (confirmaPrimo) {
+        maiorPrimo = indexI;
+    }
+}
+console.log(maiorPrimo);
+
+
+
+
