@@ -1,177 +1,163 @@
+// Exercício 1
 
-//Exercícios dia 04
- 
- const a = 22
-const b = 10
-const c = 22
+//Alterar variáveis para respeitar o escopo local
 
-
-
-function sub (a, b) {
-    return 'O número é igual a ' + (a - b)
-}
-
-function multi (a, b) {
-    return 'O número é igual a ' + (a * b)
-}
-
-function divsion (a, b) {
-    return 'O número é igual a ' + (a / b)
-}
-
-function module (a,b) {
-    return 'O número é igual a ' + (a % b)
-}
-
-function bigNumber (a,b){
-    if (a > b){
-       return 'O maior número é igual a ' +  a
+function imprimeIdade() {
+    for (var idade = 30; idade <= 40; idade += 1) {
+      console.log('Idade dentro do for:', idade)
     }
-    else if (a < b) {
-        return 'O maior número é igual a ' + b
-    }
-    else {
-        return bigNumber = 'os números são iguais'
-    }
-    
-};
-console.log(bigNumber(a,b))
-
-
-//
-
-function bigOfThree (a,b,c) {
-    if (a > b && a > c) {
-        return bigOfThree = 'O maior número é ' + a
-    }
-    else if (b > a && b > c) {
-        return bigOfThree = 'O maior número é ' + b
-    }
-    else if (c > a && c > b) {
-        return bigOfThree = 'O maior número é ' + c
-    }
-    else {
-        return bigOfThree = 'Existem números iguais'
-    }
-}
-console.log(bigOfThree(a,b,c));
-
-//
-
-function positiveNegative (number) {
-    
-
-    if (number > 0) {
-        return 'O valor é positivo'
-    }
-    else if (number < 0){
-        return 'O valor é negativo'
-    }
-    else {
-        return 'O valor é zero'
-    }
-};
-
-console.log(positiveNegative(-2))
-
-//
-
-function triangule (a,b,c){
-    if (a + b + c === 180 && a + b + c > 0 )  {
-        return 'É um triângulo válido' 
-    }
-    else if(a + b + c !== 0 ){
-        return 'Não é um triângulo válido'
-    }
-    else {
-        return 'Não é um triângulo'
-    }
-}
-console.log(triangule(a,b,c)) 
-
-//
-
-let info = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-    recorrente: 'Sim',
-  };
-let info2 = {
-    personagem: 'Tio Patinhas',
-    origem: 'Christmas on Bear Mountain, Dells Four Color Comics #178',
-    nota: 'O último MacPatinhas',
-    recorrente: 'Sim',
-}   ;
-  
-    for(let properties in info){
-        if (properties === 'recorrente' && info[properties] === 'Sim' &&
-        info2[properties] === 'Sim') {
-               
-        console.log('Nada aqui')
-        }
-        
-        else {
-        console.log(info[properties] + ' e ' + info2[properties])
-        }
-    }   ;
-        
-//
-
-for (let key in info){
-    console.log(key)
-}
-
-for (let key in info){
-    console.log(info[key])
-}
- 
-//
-
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
-
-console.log('O livro favorito de ' + leitor.nome + '' + leitor.sobrenome + 'se chama ' + leitor.livrosFavoritos[0].titulo) ;
-
-//
-
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
-
-
-leitor.livrosFavoritos.push( [
-    {
-    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-    autor: 'JK Rowling',
-    editora: 'Rocco',
+    console.log('Idade fora do for:', idade)
   }
-])
+  imprimeIdade()
+
+// Solução Exercício 1
+
+function imprimeIdade() {
+    for (let idade = 30; idade <= 40; idade += 1) {
+      console.log('Idade dentro do for:', idade)
+    }
+    
+  }
+  imprimeIdade()
+
+  // Exercício 2
+
+  //Alterar valor das propriedades respeitando o const
+  
+  // Executando esse código iremos receber um erro `TypeError: Assignment to constant variable.`
+   const pessoa = {
+    nome: 'Henri',
+    idade: 20
+  }
+  pessoa = {
+    nome: 'Luna',
+    idade: 19
+  } // Altere essa estrutura para corrigir o erro.
+  console.log('Nome:', pessoa.nome + ' e ' + pessoa1.nome);
+  console.log('Idade:', pessoa.idade + ' e ' + pessoa1.idade); */
+  
+  // Solução Exercício 2
+
+  const pessoa = {
+    nome: 'Henri',
+    idade: 20
+  }
+  pessoa.nome = 'Luna'
+  pessoa.idade = 19
+
+  console.log('Nome:', pessoa.nome + ' tem ' + pessoa.idade + ' anos de Idade') */
+  
+  // Exercício 3
+  
+  // Colocar a variável sem erro
+
+   const favoriteFood = 'Lasanha';
+  favoriteFood = 'Hamburguer';
+  console.log(favoriteFood);
+
+  // Solução Exercício 3
+
+  const favoriteFood = 'Lasanha';
+  const favoriteFood2 = 'Hamburguer';
+  console.log(favoriteFood);
+  console.log(favoriteFood2)  
+
+  // Exercício 4
+
+  // Usar template literals
+
+  const name = 'Adriana';
+  const lastName = 'Soares';
+  console.log('Olá' + ',' + name + ' ' + lastName + '!');
+  function soma(a,b) {
+    let resultado = a + b;
+    return resultado;
+  }
+  let a = 3;
+  let b = 5;
+  console.log('O resultado da soma de ' + a + ' + ' + b + ' é: ' + soma(a,b)); 
+
+  // Solução exercício 4
+
+  const name = 'Adriana';
+  const lastName = 'Soares';
+  console.log(`Olá ${name} ${lastName}`)
+  
+  function soma(a,b) {
+    let resultado = a + b;
+    return resultado;
+  }
+  let a = 3;
+  let b = 5;
+  console.log(`O resultado da soma de ${a} + ${b} é ${soma(a,b)}`)
+
+  // Exercício 5
+
+  // Colocar em arrow functions
  
-  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
+  function numeroAleatorio() {
+    return Math.random()
+  }
+  console.log(numeroAleatorio());
 
+  // Solução Exercício 5
 
+  const numeroAleatorio = () => Math.random; 
 
+  // Exercício 6
 
+  // Arrow Function
+ 
+  function hello(nome) {
+    return `Olá, ${nome}!`
+  }
+  let nome = 'Ivan';
+  console.log(hello(nome)); 
 
+  // Solução Exercício 6
+ 
+  const hello = nome => `Olá, ${nome}`
 
+  let nome = 'Ivan'
+  console.log(hello(nome)) 
 
+  // Exercício 7
+
+  function nomeCompleto(nome, sobrenome) {
+    return `${nome} ${sobrenome}`
+  }
+  let nome = 'Ivan';
+  let sobrenome = 'Pires';
+  console.log(nomeCompleto(nome, sobrenome)); 
+
+// Solução exercício 7
+
+ let nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`;
+
+let nome = 'Ivan';
+let sobrenome = 'Pires';
+
+console.log(nomeCompleto(nome,sobrenome)) 
+
+// Exercício 8
+
+// ternary operator
+
+let speed = 90;
+const speedCar = (speed) => {
+  if (speed >= 120) {
+    return `Você ultrapassou o limite de velocidade`;
+  } else {
+    return `Você está na velocidade permitida`;
+  }
+};
+console.log(speedCar(speed)); 
+
+// Solução
+
+let speed = 90;
+
+const speedCar = () => speed
+
+speed >= 120 ? 'Você ultrapassou o limite de velocidade' : 'você está na velocidade permitida'
+console.log(speedCar(speed))
