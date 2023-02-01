@@ -57,64 +57,47 @@
   </head>
   <body>
     <script>
-      const alteraTexto =() => {
+      
         const mudaTexto = document.createElement('h1');
-        mudaTexto.innerText = 'TrybeTrip - Agência de Viagens';
-              
+        mudaTexto.innerText = 'TrybeTrip - Agência de Viagens';              
         document.body.appendChild(mudaTexto);
-      }
-      alteraTexto();
-
-      const criaMain =() => {
+      
+       
         const mudaMain = document.createElement('main');
-        criaMain.className = 'main-content'
-
-        document.body.appendChild(mudaMain)
-      }
-      criaMain();
-
-      const criaSection = () => {
+        mudaMain.className = 'main-content'
+        document.body.appendChild(mudaMain);
+      
+        
         const sectionCenter = document.createElement('section');
         criaSection.className = 'center-content'
-
         mudaMain.appendChild(sectionCenter);
-      }
-      criaSection();
+     
 
-      const criaP = () => {
+     
         const paragraph = document.createElement('p');
         paragraph.innerHTML = 'textos aleatórios';
-
         sectionCenter.appendChild(paragraph);
-      }
-     criaP();
+     
 
-     const criaSection2 = () => {
+     
         const leftSection = document.createElement('section');
         leftSection.className = 'left-content'
-
         mudaMain.appendChild(leftSection);
-     }
-     criaSection2();
+     
 
-     const criaSection3 = () => {
+     
         const rightSection = document.createElement('section');
         rightSection.className = 'right-content'
-
         mudaMain.appendChild(rightSection);
-     }
-     criaSection3();
+       
 
-     const addImagem = () => {
+       
         const criaImagem = document.createElement('img');
         criaImagem.className = 'small-image';
         criaImagem.src = 'https://picsum.photos/200';
-
         leftSection.appendChild(criaImagem);
-     }
-     addImagem();
-
-     const criaLista = () => {
+    
+     
         const lista = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
         const addLista = document.createElement('ul');
         rightSection.appendChild('lista')
@@ -122,13 +105,8 @@
         const itemLista = document.createElement('li');
         lista[index] = itemLista.innerHTML;
         addLista.appendChild(itemLista);
-        }
-    }
-        criaLista()
-               
-     
-
-     
-    </script>
+        };    
+                
+     </script>
   </body>
 </html>
