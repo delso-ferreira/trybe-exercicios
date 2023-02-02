@@ -69,7 +69,7 @@
       
         
         const sectionCenter = document.createElement('section');
-        criaSection.className = 'center-content'
+        sectionCenter.className = 'center-content'
         mudaMain.appendChild(sectionCenter);
      
 
@@ -100,7 +100,8 @@
      
         const lista = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
         const addLista = document.createElement('ul');
-        rightSection.appendChild('lista')
+        rightSection.appendChild(addLista)
+       
         for(let valor of lista){
         const itemLista = document.createElement('li');
         lista[index] = itemLista.innerHTML;
