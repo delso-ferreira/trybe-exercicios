@@ -102,11 +102,13 @@
         const addLista = document.createElement('ul');
         rightSection.appendChild(addLista)
        
-        for(let valor of lista){
+        for(let valor in lista){
         const itemLista = document.createElement('li');
-        lista[index] = itemLista.innerHTML;
+        itemLista.innerHTML = lista[valor] ;
         addLista.appendChild(itemLista);
-        };    
+        
+        };
+            
                 
      </script>
   </body>
