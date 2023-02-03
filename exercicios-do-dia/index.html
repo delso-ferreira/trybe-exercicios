@@ -1,114 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
+<html lang="pt-br">
 
-      .title {
-        text-align: center;
-      }
+<head>
+    <title>Delso - Lessons Learned</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Cutive"></head>
 
-      .main-content {
-        background-color: yellow;
-      }
+<body id="body">
+    <header id="cabecalho">
+        <nav class="navegacao">
+            <h1 id="titulo">Exercício Dom</h1>
+               <ul class="cor-de-fundo"><h4>Cor de Fundo</h4>
+              <li>white</li>  
+              <li>black</li>
+              <li>green</li>
+              <li>blue</li>
+              <li>yellow</li>
+              </ul>
+              <ul class="corfonte"><h4>Cor da Fonte</h4>
+               <li>black</li> 
+               <li>white</li>
+               <li>green</li>
+               </ul>  
+               <ul class="corfonte"><h4>Cor da Fonte</h4>
+                <li>black</li> 
+                <li>white</li>
+                <li>green</li>
+                </ul class="tamanhofonte"><h4>Tamanho da Fonte</h4>
+                <li>0px</li>  
+                <li>10px</li>
+                <li>12px</li>
+                <li>13px</li>
+                <li>20px</li>
+                </ul>
+                
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+            </ul>
+        </nav>
+            </header>
+    <main>
+        <section>
+        <h2 id="licoes_a_aprender">Lições a aprender</h2>
+        </section>
+        <article class="lado-esquerdo">
+            <p>Dentro da trybe venho aprendendo muitas coisas, com ótimos professores e instrutores. Uma das principais
+                diferenças que percebi no curso é a valorização das Soft Skills, praticamente todos os dias temos um
+                momento
+                específico para o desenvolvimento dessas habilidades, o que faz muita diferença no mercado de trabalho,
+                digo
+                isso por experiência própria, no entanto, o que mais estou ansioso é para quando o foco vai ser colocado
+                no desenvolvimento da Carreira.</p>
+            </p>
+        </article>
+        </main>
+    <aside class="lado-direito"><p>Nascido em Japeri e morador de Nova Iguaçu, tenho 33 anos, me formei em Arquivoloia pela Universidade Federal
+        do Rio de Janeiro e agora sou estudante de Web Dev pela Trybe.</p></aside>
+        <table id="table">
+    <footer id="rodape"><p>'Criado por Delso Ferreira em 2023'</footer></p>
+</body>
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
-
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
-
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
-
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
-
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      
-        const mudaTexto = document.createElement('h1');
-        mudaTexto.innerText = 'TrybeTrip - Agência de Viagens';              
-        document.body.appendChild(mudaTexto);
-      
-       
-        const mudaMain = document.createElement('main');
-        mudaMain.className = 'main-content'
-        document.body.appendChild(mudaMain);
-      
-        
-        const sectionCenter = document.createElement('section');
-        sectionCenter.className = 'center-content'
-        mudaMain.appendChild(sectionCenter);
-     
-
-     
-        const paragraph = document.createElement('p');
-        paragraph.innerHTML = 'textos aleatórios';
-        sectionCenter.appendChild(paragraph);
-     
-
-     
-        const leftSection = document.createElement('section');
-        leftSection.className = 'left-content'
-        mudaMain.appendChild(leftSection);
-     
-
-     
-        const rightSection = document.createElement('section');
-        rightSection.className = 'right-content'
-        mudaMain.appendChild(rightSection);
-       
-
-       
-        const criaImagem = document.createElement('img');
-        criaImagem.className = 'small-image';
-        criaImagem.src = 'https://picsum.photos/200';
-        leftSection.appendChild(criaImagem);
-    
-     
-        const lista = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
-        const addLista = document.createElement('ul');
-        rightSection.appendChild(addLista)
-       
-        for(let valor in lista){
-        const itemLista = document.createElement('li');
-        itemLista.innerHTML = lista[valor] ;
-        addLista.appendChild(itemLista);
-        }  
-          
-      
-     </script>
-  </body>
 </html>
